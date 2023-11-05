@@ -42,7 +42,7 @@ export const HeaderTitle = () => {
           </IconButton>
       </Stack>
      : 
-    <Container sx={{width:"1220px !important"}}>
+    <Stack sx={{width:"100%", height:"auto"}}>
       <Stack sx={{flexDirection:"row", alignItems:"center", justifyContent:"space-between", py:4 }}>
         <Stack sx={{ flexDirection:"row", alignItems:"center",gap:{md:2, xs:1}}}>
           <img width="53px" height="42px" alt='avocado icon' src={getAssetUrl('avocado.svg')} />
@@ -65,7 +65,7 @@ export const HeaderTitle = () => {
           <Button variant='contained' disableElevation sx={{ fontWeight: 'bold', borderRadius: 2.5, backgroundColor:"#0085FF", boxShadow:"0px 16px 24px #0085FF29" }}>Sign Up</Button>    
         </Stack>         
       </Stack>
-    </Container>
+    </Stack>
 }      
     </>
   )

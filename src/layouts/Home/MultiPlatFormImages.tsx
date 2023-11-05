@@ -11,8 +11,8 @@ export const MultiPlatFormImages = () => {
   const isMobile = useMediaQuery({ maxWidth: 786 });
   return (
     <>
-      <Stack>
-      <Stack sx={{alignItems:"center"}}>
+      <Stack >
+      <Stack sx={{alignItems:"center", p:{md:3}}}>
         <Stack sx={{width:{md:"436px", xs:"281px"}, height:{md:"436px", xs:"281px"}, border:"1px solid #00000040", position:"relative", borderRadius:"50%", alignItems:"center", justifyContent:"center"}}>
             <Stack sx={{width:{md:"292px", xs:"189px"}, height:{md:"292px", xs:"189px"}, border:"1px solid #00000040", borderRadius:"50%", alignItems:"center", justifyContent:"center"}}>
               <Stack sx={{width:{md:"200px", xs:"129px"}, height:{md:"200px", xs:"129px"}, border:"1px solid #00000040", borderRadius:"50%", alignItems:"center", justifyContent:"center", backgroundColor:"#FFFFFF"}}>

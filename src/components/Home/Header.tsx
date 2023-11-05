@@ -1,71 +1,30 @@
-import { Box, Button, Container, IconButton, Stack, Tab, Tabs, Typography } from '@mui/material'
-import React, { useRef, useState } from 'react';
-
-//utils
-import { useTranslation } from 'react-i18next';
-
-//helpers
-import { getAssetUrl } from '../../Assets/helper';
-
-//responsive
-import { useMediaQuery } from 'react-responsive';
-
-//icons
-import DragHandleIcon from '@mui/icons-material/DragHandle';
+import { Box, Grid, Stack } from '@mui/material'
+import React from 'react'
+import { HeaderTitle } from './HeaderTitle'
+import { CustomerRelationship } from '../../layouts/Home/CustomerRelationship'
+import { SocialMedia } from '../../layouts/Home/SocialMedia'
 
 export const Header = () => {
-  const { t } = useTranslation();
-    const isMobile = useMediaQuery({ maxWidth: 786 });
-
-    //  local state
-    const [active, setActive] = useState(0);
-
-    //  refs
-  const currentPageRef = useRef(1);
-
-    //  handle tabs
-  const handleTabChange = (e: any, newTab: number) => {
-    currentPageRef.current = 1;
-    setActive(newTab);
-  }
   return (
-    <>
-    {isMobile?
-      <Stack sx={{flexDirection:"row", justifyContent:"space-between", py:1, px:2}}>
-          <Stack sx={{flexDirection:"row"}}>
-            <img width="43px" height="30px" alt='avocado icon' src={getAssetUrl('avocado.svg')} />
-            <Typography sx={{fontSize:"22px", fontWeight:"700"}}>Avocado</Typography>
-          </Stack>
-          <IconButton>
-            <DragHandleIcon />
-          </IconButton>
-      </Stack>
-     : 
-    <Container sx={{width:"1220px !important"}}>
-      <Stack sx={{flexDirection:"row", alignItems:"center", justifyContent:"space-between", py:4 }}>
-        <Stack sx={{ flexDirection:"row", alignItems:"center",gap:{md:2, xs:1}}}>
-          <img width="53px" height="42px" alt='avocado icon' src={getAssetUrl('avocado.svg')} />
-          <Typography sx={{fontSize:"32px", fontWeight:"700"}}>Avocado</Typography>
+    <Stack sx={{}}>
+      <Stack sx={{position:"relative", height:{md:"800px", xs:"800px"}}}>
+      <Grid container>
+          <Grid item md={3} xs={3} sx={{backgroundColor:"#0085FF", opacity:"5%", height:"800px"}}></Grid>
+          <Grid item md={3} xs={3} sx={{backgroundColor:"#0085FF", opacity:"7%", height:"800px"}}></Grid>
+          <Grid item md={3} xs={3} sx={{backgroundColor:"#0085FF", opacity:"9%", height:"800px"}}></Grid>
+          <Grid item md={3} xs={3} sx={{backgroundColor:"#0085FF", opacity:"11%", height:"800px"}}></Grid>  
+      </Grid>
+        <Stack sx={{position:"relative", px:{md:10}, top:{md:"-800px", xs:"-800px"}}}>
+          <HeaderTitle />
         </Stack>
-        <Tabs
-          data-testid="rules-type-filter"
-          value={active}
-          onChange={handleTabChange}
-          indicatorColor="primary"
-          textColor="primary"
-          sx={{ '.MuiTabs-flexContainer': { gap: 6 } }}
-        >
-          <Tab data-testid="active-rules" label="Home" sx={{ textTransform: 'none', p: 1, minWidth: 'auto', fontWeight:"600", color:"#1A1A1A" }} />
-          <Tab data-testid="disabled-rules" label="Services" sx={{ textTransform: 'none', p: 1, minWidth: 'auto', fontWeight:"600", color:"#1A1A1A" }} />
-          <Tab data-testid="disabled-rules" label="About" sx={{ textTransform: 'none', p: 1, minWidth: 'auto', fontWeight:"600", color:"#1A1A1A" }} />
-          <Tab data-testid="disabled-rules" label="Testimonials" sx={{ textTransform: 'none', p: 1, minWidth: 'auto', fontWeight:"600", color:"#1A1A1A" }} />
-        </Tabs>
-        <Stack sx={{display:{md:"flex", xs:"none"}}}>
-          <Button variant='contained' disableElevation sx={{ fontWeight: 'bold', borderRadius: 2.5, backgroundColor:"#0085FF", boxShadow:"0px 16px 24px #0085FF29" }}>Sign Up</Button>    
-        </Stack>         
+        <Stack sx={{position:"relative", top:{md:"-700px", xs:"-800px"}}}>
+          <CustomerRelationship />
+        </Stack>
+        <Stack sx={{position:"relative", bottom:{md:"800px", xs:"680px"}}}>
+          <SocialMedia />
+        </Stack>
       </Stack>
-    </Container>
-}      
-    </>
+        
+    </Stack>
   )
 }

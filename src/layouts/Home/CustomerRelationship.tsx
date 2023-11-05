@@ -15,30 +15,33 @@ export const CustomerRelationship = () => {
 
   return (
     <>
-        <Container sx={{maxWidth:"1440px !important"}}>
-            <Stack sx={{alignItems:"center", height:"720px", justifyContent:{md:"center", xs:"none"}}}>
+        <Stack sx={{width:"100%"}}>
+            <Stack sx={{alignItems:"center", justifyContent:{md:"center", xs:"none"}}}>
                 <Grid container>
                     <Grid item xs={12} md={6}>
-                        <Stack width={isMobile? "326px": " 554px"} sx={{px:{md:13, xs:1}, py:{md:15, xs:2}}}>
+                        <Stack sx={{px:{md:6}}}>
                           <CustomRelationshipSlider />
                         </Stack>  
                     </Grid>
-                    <Grid item md={6} xs={12}>
-                    <Stack>    
+                    <Grid item md={6} xs={12} sx={{}}>
+                    <Stack sx={{alignItems:"flex-end", justifyContent:"flex-start"}}>    
                     {isMobile? 
                     <>
                         <Box sx={{width:"360px", height:"300px", overflow:"hidden"}}>
                           <img style={{width:"550px",height:"300px", objectFit:"cover", objectPosition:"-20% 50%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
                         </Box>
                     </> : 
-                    <Box sx={{width:"675px", height:"700px", overflow:"hidden"}}>
-                        <img style={{width:"770px",height:"700px", objectFit:"cover", objectPosition:"-10% 50%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
-                    </Box>}
+                    <Stack sx={{alignItems:"flex-end"}}>
+                    <Box sx={{width:"90%", height:"auto", overflow:"hidden", justifyContent:"center"}}>
+                        <img style={{width:"100%",height:"650px", objectFit:"cover", objectPosition:"20% 50%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
+                    </Box>
+                    </Stack>
+                    }
                     </Stack>
                     </Grid>
                 </Grid>
             </Stack>
-        </Container>
+        </Stack>
     </>
   )
 }

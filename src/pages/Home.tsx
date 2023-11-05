@@ -16,39 +16,30 @@ import { Sales } from '../layouts/Home/Sales';
 import { Header } from '../components/Home/Header';
 import { CustomerRelationship } from '../layouts/Home/CustomerRelationship';
 import { Footer } from '../components/Home/Footer';
+import { IndustryScreen } from '../layouts/Home/IndustryScreen';
 
 const Home = () => {
   return (
-    <Box sx={{maxWidth:"1440px !important", alignItems:"center"}}>
-      <Stack sx={{gap:{md:5, xs:2}}}>
-          <Box sx={{}}> 
-          <Stack sx={{position:"relative"}}>
-            <Grid container>
-                <Grid item md={3} xs={3} sx={{backgroundColor:"#0085FF", opacity:"5%", height:"800px"}}></Grid>
-                <Grid item md={3} xs={3} sx={{backgroundColor:"#0085FF", opacity:"7%", height:"800px"}}></Grid>
-                <Grid item md={3} xs={3} sx={{backgroundColor:"#0085FF", opacity:"9%", height:"800px"}}></Grid>
-                <Grid item md={3} xs={3} sx={{backgroundColor:"#0085FF", opacity:"11%", height:"800px"}}></Grid>
-                <Box sx={{ position:"absolute"}}>
-                  <Header />
-                  <CustomerRelationship />
-                  <SocialMedia /> 
-                </Box>    
-            </Grid>
-          </Stack>   
-            
-          </Box>
-          {/* <Header /> */}
-          <ManageBusiness />
-          <PersonalizedMessage />
-          <WhatsappFeature />
-          <Agents />
-          <MultiPlatForms />
-          <CustomerSlider />
-          <PricePlans />
-          <Sales />
-          <Footer />
-        </Stack>
+    
+    <>
+    <Box sx={{maxWidth:"100%", alignItems:"center"}}>
+       <Stack sx={{gap:{}}}>
+           <Header />
+           <ManageBusiness />
+           <PersonalizedMessage />
+           <WhatsappFeature /> 
+           <IndustryScreen />
+           <MultiPlatForms />
+           <CustomerSlider />
+           <PricePlans />
+           <Sales />
+           <Footer />
+         </Stack>
     </Box>
+      {/* <Stack sx={{maxWidth:"140px !important", backgroundColor:"yellow"}}>
+        <Typography>hellow world</Typography>
+      </Stack> */}
+    </>
   )
 }
 
