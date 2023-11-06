@@ -24,16 +24,16 @@ const Home = () => {
     <>
     <Box sx={{maxWidth:"100%", alignItems:"center"}}>
        <Stack sx={{gap:{}}}>
-           <Header />
+           {/* <Header />
            <ManageBusiness />
            <PersonalizedMessage />
-           <WhatsappFeature /> 
+           <WhatsappFeature />  */}
            <IndustryScreen />
-           <MultiPlatForms />
-           <CustomerSlider />
-           <PricePlans />
-           <Sales />
-           <Footer />
+           {/* <MultiPlatForms /> */}
+           {/* <CustomerSlider /> */}
+           {/* <PricePlans /> */}
+           {/* <Sales />
+           <Footer /> */}
          </Stack>
     </Box>
       {/* <Stack sx={{maxWidth:"140px !important", backgroundColor:"yellow"}}>
