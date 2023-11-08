@@ -22,8 +22,7 @@ const Home = () => {
   return (
     
     <>
-    <Box sx={{maxWidth:"100%", alignItems:"center"}}>
-       <Stack sx={{gap:{}}}>
+       <Stack sx={{width:"100%"}}>
            <Header />
            <ManageBusiness />
            <PersonalizedMessage />
@@ -35,10 +34,6 @@ const Home = () => {
            <Sales />
            <Footer />
          </Stack>
-    </Box>
-      {/* <Stack sx={{maxWidth:"140px !important", backgroundColor:"yellow"}}>
-        <Typography>hellow world</Typography>
-      </Stack> */}
     </>
   )
 }

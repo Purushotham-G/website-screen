@@ -23,9 +23,9 @@ export const CustomRelationshipSlider = () => {;
         autoplay: true,
         speed: 9000,
         autoplaySpeed: 3000,
-        customPaging: () => {
-          return <RemoveIcon />;
-        },
+        // customPaging: () => {
+        //   return <RemoveIcon />;
+        // },
         };
 
   return (

@@ -8,13 +8,13 @@ import { TransformSlider } from './TransformSlider';
 
 export const IndustryScreen = () => {
   return (
-    <Box sx={{width:"100%", backgroundColor:"#FAFAFA", gap:4}}>
-      <Stack sx={{height:{md:"auto", xs:"auto", sm:"auto"}, alignItems:"center", justifyContent:"center", gap:{md:3, xs:1}}}>
-        <Stack sx={{alignItems:"center", justifyContent:"center", p:2}}>
+    <Box sx={{width:"100%", backgroundColor:"#FAFAFA"}}>
+      <Stack sx={{height:"auto", alignItems:"center", justifyContent:"center", gap:{md:3, xs:1}, pt:{md:4, xs:2}, pb:{md:4, xs:2}}}>
+        <Stack sx={{alignItems:"center", justifyContent:"center"}}>
           <Typography sx={{fontSize:{md:"32px", xs:"24px", sm:"28px"}, fontWeight:"600"}}><span style ={{color:"#0085FF"}}>Solutions </span> for Every Industry</Typography>
           <Typography sx={{fontSize:{md:"18px", xs:"16px", sm:"17px"}, fontWeight:"400", textAlign:"center"}}>Industry-specific use cases designed to increase leads, transactions, and repeat purchases</Typography>
         </Stack>
-        <Stack sx={{mt:2, px:2}}>
+        <Stack sx={{mt:2}}>
           <IndustrySlider />
         </Stack>
       </Stack>

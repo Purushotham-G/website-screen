@@ -8,6 +8,11 @@ import Slider from 'react-slick';
 
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import { TransformSlider } from './TransformSlider';
+import { RetailScreen } from '../IndustryScreen/RetailScreen';
+import { Fintech } from '../IndustryScreen/Fintech';
+import { Eductions } from '../IndustryScreen/Eductions';
+import { HealthCare } from '../IndustryScreen/HealthCare';
+import { TravelHospitality } from '../IndustryScreen/TravelHospitality';
 
 export const IndustrySlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,23 +24,25 @@ export const IndustrySlider = () => {
                 "Education",
                 "Healthcare", 
                 "Travel & Hospitality", 
-                "WholeSale",
-                "Bulk"
+                "Travel & Hospitality",,
+                // "Bulk"
             ]
   
     const renderContent = () => {
       switch (currentSlide) {
         case 0:
-          return <TransformSlider />;
+          return <RetailScreen />;
         case 1:
-          return <TransformSlider />;
+          return <Fintech />;
         case 2:
-          return <TransformSlider />;
+          return <Eductions />;
         case 3:
-          return <TransformSlider />;
+          return <HealthCare />;
         case 4:
-          return <TransformSlider />;
+          return <TravelHospitality />;
         case 5:
+          return <TransformSlider />;
+        case 6:
           return <TransformSlider />;
         default:
           return null;
