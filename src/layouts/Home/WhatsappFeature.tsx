@@ -32,14 +32,16 @@ export const WhatsappFeature = () => {
                   </Stack>
               </Grid>
               <Grid item md={6} xs={12}> 
-                <Stack sx={{alignItems:"center", gap:2, px:2}}>
+                <Stack sx={{alignItems:"center", gap:3, px:2}}>
                   <Stack sx={{justifyContent:"center", px:{md:10, xs:1}, gap:{md:3, xs:2}}}>
-                      <Typography sx={{fontSize:{md:"32px"}, fontWeight:"600"}}>Power-packed WhatsApp <span style={{ color: "#0085FF" }}> Business API </span>  Features</Typography>
+                    <Typography sx={{fontSize:{md:"26px", xs:"20px", sm:"24px"}, color:"#0085FF", fontWeight:"600"}}>Be the Boss</Typography>
+                    <Typography sx={{fontSize:{md:"32px", xs:"24px", sm:"28px"}, fontWeight:"600"}}>Amplify Engagement & Sales with WhatsApp Marketing</Typography>
+                    <Typography sx={{fontSize:{md:"18px", xs:"16px", sm:"17px"}, fontWeight:"400", textAlign:"justify"}}>Maximize your reach and deepen customer relationships with WhatsApp marketing, using targeted, personal messages that resonate with your audience. Leverage the power of instant messaging to drive engagement, boost sales, and build a loyal customer base.</Typography>
                   </Stack> 
                   <Stack>
                     <ClickAwayListener onClickAway={handleClickAway}>
                       <div ref={accordionRef}>
-                        <Stack sx={{gap:2}}>  
+                        <Stack sx={{gap:{md:3, xs:2}}}>  
                         <Accordion
                           expanded={expanded === 'panel1'}
                           onChange={handleAccordionChange('panel1')}
@@ -48,7 +50,7 @@ export const WhatsappFeature = () => {
                           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Stack sx={{ flexDirection: 'row' }}>
                               <Typography fontWeight={700} fontSize={{ md: '20px', xs: '18px' }}>
-                                Automated Workflows
+                                Ads that Work on WhatsApp
                               </Typography>
                               <Stack sx={{ backgroundColor: '#0085FF0D', alignItems: 'center', justifyContent: 'center', borderRadius: '8px' }}>
                                 <Typography sx={{ fontSize: '14px', fontWeight: '600', color: '#0085FF', px: 1 }}>popular</Typography>
@@ -63,8 +65,7 @@ export const WhatsappFeature = () => {
                                 width={{ md: 440 }}
                                 sx={{ textAlign: 'justify', fontWeight: '400' }}
                               >
-                                Create event-based workflows on WhatsApp to guide your customers through various processes like appointment
-                                booking, new registrations, etc.
+                                Revolutionize your marketing strategy with WhatsApp Click-to-Chat ads, directly connecting your advertising efforts with engaging customer conversations.
                               </Typography>
                             </Stack>
                           </AccordionDetails>
@@ -77,7 +78,7 @@ export const WhatsappFeature = () => {
                           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Stack sx={{ }}>
                               <Typography fontWeight={700} fontSize={{ md: '20px', xs: '18px' }}>
-                                Ads that Click to WhatsApp
+                                Segmentation & Targeting
                               </Typography>
                             </Stack>
                           </AccordionSummary>
@@ -89,8 +90,7 @@ export const WhatsappFeature = () => {
                                 width={{ md: 440 }}
                                 sx={{ textAlign: 'justify', fontWeight: '400' }}
                               >
-                                Create event-based workflows on WhatsApp to guide your customers through various processes like appointment
-                                booking, new registrations, etc.
+                                Craft your marketing strategies in compliance with WhatsApp Ad policies, as we ensure your audience segmentation and targeted campaigns meet platform standards for secure and respectful user engagement.
                               </Typography>
                             </Stack>
                           </AccordionDetails>
@@ -103,7 +103,7 @@ export const WhatsappFeature = () => {
                           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Stack sx={{ }}>
                               <Typography fontWeight={700} fontSize={{ md: '20px', xs: '18px' }}>
-                              Shared Team Inbox
+                                WhatsApp Compliance
                               </Typography>
                             </Stack>
                           </AccordionSummary>
@@ -115,8 +115,7 @@ export const WhatsappFeature = () => {
                                 width={{ md: 440 }}
                                 sx={{ textAlign: 'justify', fontWeight: '400' }}
                               >
-                                Create event-based workflows on WhatsApp to guide your customers through various processes like appointment
-                                booking, new registrations, etc.
+                                With strict adherence to WhatsApp Ad policies, our audience segmentation and targeting tools are designed to uphold platform integrity while delivering personalized and responsible content to your valued customers.
                               </Typography>
                             </Stack>
                           </AccordionDetails>
