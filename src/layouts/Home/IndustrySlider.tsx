@@ -24,7 +24,7 @@ export const IndustrySlider = () => {
                 "Education",
                 "Healthcare", 
                 "Travel & Hospitality", 
-                "Travel & Hospitality",,
+                // "Travel & Hospitality",,
                 // "Bulk"
             ]
   
@@ -111,7 +111,7 @@ export const IndustrySlider = () => {
 
     <Box sx={{alignItems:"center"}}>
       <Stack sx={{ alignItems:"center", justifyContent:"center"}}>
-          <Stack sx={{maxWidth:{md:"1100px !important", xs:"285px"},height:"auto", border:"1px solid #E1E1E1", justifyContent:"center", py:{md:2, xs:1.5}, px:{md:4, xs:1}, position:"relative", borderRadius:"8px", boxShadow:"0px 0px 25px #00000014"}}>
+          <Stack sx={{maxWidth:{md:"1100px !important", xs:"285px"}, minWidth:{md:"1000px"},height:"auto", border:"1px solid #E1E1E1", justifyContent:"center", py:{md:2, xs:1.5}, px:{md:4, xs:1}, position:"relative", borderRadius:"8px", boxShadow:"0px 0px 25px #00000014"}}>
             <Slider {...settings}>
             {data.map((item, index) => (
             <Stack sx={{alignItems:"center"}}>
@@ -124,7 +124,7 @@ export const IndustrySlider = () => {
             >
               <Stack sx={{justifyContent:"space-between"}}>
                 <Stack sx={{ color: currentSlide === index ? '#0085FF' : '#1A1A1A', backgroundColor: currentSlide === index ? '#0085FF1A' : '#FAFAFA', borderRadius:"8px", py:{md:1, xs:0.5}, alignItems:"center", minWidth:"max-content" }}>
-                  <Typography sx={{fontSize:{md:"20px", xs:"11px", sm:"17px"}, fontWeight:"600", minWidth: 'max-content'}}>{item}</Typography>
+                  <Typography sx={{fontSize:{md:"20px", xs:"10.5px", sm:"17px"}, fontWeight:"600", minWidth: 'max-content'}}>{item}</Typography>
                 </Stack>   
               </Stack>
             </div>

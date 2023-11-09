@@ -9,8 +9,8 @@ export const ManageBusiness = () => {
 
   return (
     <Stack sx={{width:"100%"}}>
-        <Stack sx={{mt:4, p:2, alignItems:"center", justifyContent:"center", gap:4}}>
-            <Stack sx={{alignItems:"center", justifyContent:"center", px:{md:1, xs:2}}}>
+        <Stack sx={{mt:4, py:{md:6, xs:3}, alignItems:"center", justifyContent:"center", gap:4}}>
+            <Stack id="services" sx={{alignItems:"center", justifyContent:"center", px:{md:1, xs:2}}}>
                 <Typography sx={{fontSize:{md:"32px", xs:"24px"}, fontWeight:"600", textAlign:"center"}}>Better tools to <span style={{ color: "#0085FF" }}> manage </span> your business</Typography>
                 <Typography sx={{fontSize:{md:"18px",xs:"16px"}, fontWeight:"400", textAlign:"center"}}>Millions of companies of all sizes—from startups to Fortune 500s—use Avocado’s SDK</Typography>
             </Stack>

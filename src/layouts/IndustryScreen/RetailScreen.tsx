@@ -12,17 +12,17 @@ export const RetailScreen = () => {
     
   return (
     <>
-        <Stack sx={{width:"100%", backgroundColor:"#ffffff", height:{md:"550px", xs:"auto", sm:"auto"}, alignItems:"center", justifyContent:"center", boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", border:"1px solid #0085FF1A", borderRadius:"8px"}}>
+        <Stack sx={{width:"100%", backgroundColor:"#ffffff", height:"auto", alignItems:"center", justifyContent:"center", boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", border:"1px solid #0085FF1A", borderRadius:"8px"}}>
             <Grid container>
                 <Grid item xs={12} md={6}>
-                  <Stack sx={{px:4, py:{md:2, xs:3}}}>
+                  <Stack sx={{px:4, py:{md:4, xs:3}}}>
                     <img width="100%" height="100%" src={getAssetUrl('website/retail.jpg')} alt="no data icon"/>
                   </Stack>
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Stack sx={{py:{md:3, xs:2}, px:{md:8, xs:3}, gap:{md:2, xs:1}}} >
                     <Stack sx={{gap:2}}>
-                        <Typography sx={{fontSize:{md:"32px", xs:"24px"}, fontWeight:"600"}}> <span style={{color:"#0085FF"}}>Transform Shopping </span> Experience with AI Chatbots</Typography>
+                        <Typography sx={{fontSize:{md:"32px", xs:"24px"}, fontWeight:"600"}}> <span style={{color:"#0085FF"}}>Retail </span> Experience with AI Chatbots</Typography>
                         <Typography sx={{fontSize:{md:"18px", xs:"16px"}, fontWeight:"400", lineHeight:{md:"28px",xs:"24px"}, textAlign:"justify"}}>Boost sales and engagement in the retail industry through WhatsApp Business, providing expert guidance and personalized shopping experiences anytime, anywhere.</Typography>
                     </Stack>
                     <Stack sx={{flexDirection:"row"}}>

@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from '@mui/material'
+import { Button, Stack, Typography, makeStyles, styled } from '@mui/material'
 
 //responsive
 import { useMediaQuery } from 'react-responsive';
@@ -10,27 +10,56 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from 'react';
 
 export const CustomRelationshipSlider = () => {;
     const isMobile = useMediaQuery({ maxWidth: 786 });
 
-    const settings = {
+  const [currentSlide, setCurrentSlide] = useState<any>(0);
+
+  const CustomDots = styled("div")({
+    "& li button:before": {
+      color: "blue", // Change the color to your desired color
+    },
+  });
+
+  
+
+    const settings: any = {
         dots: true,
         infinite: true,
         arrows:false,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 9000,
-        autoplaySpeed: 3000,
-        // customPaging: () => {
-        //   return <RemoveIcon />;
-        // },
+        speed: 3000,
+        autoplaySpeed: 8000,
+        // appendDots: (dots: JSX.Element[]) => (
+        //   <div style={{ backgroundColor: '#e7e7e7', padding: '10px' }}>
+        //     <ul style={{ margin: '0px' }}> 
+        //       {dots.map((dot, index) => (
+        //         <li
+        //           key={index}
+        //           style={{
+        //             display: 'inline-block',
+        //             marginRight: '10px',
+        //             color: index === currentSlide ? '#0085FF' : '#808080', // Adjust the colors here
+        //           }}
+        //         >
+        //           <button style={{ border: 'none', backgroundColor: 'transparent', cursor: 'pointer' }} onClick={() => setCurrentSlide(index)}>
+        //             {index + 1}
+        //           </button>
+        //         </li>
+        //       ))}
+        //     </ul>
+        //   </div>
+        // ),
         };
 
   return (
     <>
         <Stack sx={{width:"100%"}}>
+          
         <Slider {...settings} >
             <Stack>
                 <Stack sx={{gap:{md:2, xs:1}}}>

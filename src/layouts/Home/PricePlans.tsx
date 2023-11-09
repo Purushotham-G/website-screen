@@ -34,7 +34,7 @@ export const PricePlans = () => {
     
   return (
     <>
-      <Stack sx={{width:"100%",alignItems:"center", justifyContent:"center", gap:{md:4, xs:1}, backgroundColor:"#FFFFFF"}}>
+      <Stack sx={{width:"100%",alignItems:"center", justifyContent:"center", gap:{md:2, xs:1}, backgroundColor:"#FFFFFF", py:{md:3, xs:2}}}>
           <Stack sx={{alignItems:"center", justifyContent:"center", px:{md:0, xs:6}}}>
               <Typography sx={{fontSize:{md:"32px", xs:"24px"}, fontWeight:"600", textAlign:"center"}}>Avocado <span style={{color:"#0085FF"}}> Pricing </span>  Plans</Typography>
               <Typography sx={{fontSize:{md:"18px", xs:"16px"}, fontWeight:"400", textAlign:"center"}}>Fair Use Pricing with no markup on Meta Fees!</Typography>

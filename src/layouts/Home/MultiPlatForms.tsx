@@ -10,7 +10,7 @@ import { useMediaQuery } from 'react-responsive';
 export const MultiPlatForms = () => {
    const isMobile = useMediaQuery({ maxWidth: 786 });
   return (
-    <Stack sx={{width:"100%", py:{md:7, xs:3}, height:"auto", justifyContent:"center"}}>
+    <Stack id ='integrations' sx={{width:"100%", py:{md:7, xs:3}, height:"auto", justifyContent:"center"}}>
         <Grid container alignItems="center" justifyContent="center">
             <Grid item xs={12} md={6}>   
             <Stack sx={{px:{md:10, xs:2}, gap:{md:3, xs:2}, justifyContent:"center"}}>

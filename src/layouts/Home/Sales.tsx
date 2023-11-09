@@ -15,7 +15,7 @@ export const Sales = () => {
   const isMobile = useMediaQuery({ maxWidth: 786 });
   return (
     <>
-        <Stack sx={{ backgroundColor:"#FAFAFA", alignItems:"center", py:{md:6, xs:2, sm:4}, px:{md:15, xs:2, sm:10}}}>
+        <Stack id='contact' sx={{ backgroundColor:"#FAFAFA", alignItems:"center", py:{md:6, xs:2, sm:4}, px:{md:15, xs:2, sm:10}}}>
             <Stack sx={{alignItems:"center", justifyContent:"center", backgroundColor:" #FFFFFF", height:{md:"382px", xs:"auto", sm:"auto"}, boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", gap:{md:2, xs:3}, px:{md:10, xs:2}, py:{md:0, xs:3}, borderRadius:"8px"}}>
                 <Stack sx={{alignItem:"center", justifyContent:"center", px:{md:12, xs:1, sm:9}, gap:{md:0, xs:3, sm:2}}}>
                     <Stack sx={{px:{md:2, xs:1, sm:4}, py:{md:4}, alignItems:"center", gap:{md:3, xs:2, sm:3}, justifyContent:"center"}}>

@@ -6,10 +6,10 @@ import { getAssetUrl } from '../../Assets/helper';
 export const TravelHospitality = () => {
   return (
     <>
-        <Stack sx={{width:"100%", backgroundColor:"#ffffff", height:{md:"550px", xs:"auto", sm:"auto"}, alignItems:"center", justifyContent:"center", boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", border:"1px solid #0085FF1A", borderRadius:"8px"}}>
+        <Stack sx={{width:"100%", backgroundColor:"#ffffff", height:"auto", alignItems:"center", justifyContent:"center", boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", border:"1px solid #0085FF1A", borderRadius:"8px"}}>
             <Grid container>
                 <Grid item xs={12} md={6}>
-                  <Stack sx={{px:4, py:{md:2, xs:3}}}>
+                  <Stack sx={{px:4, py:{md:4, xs:3}}}>
                     <img width="100%" height="100%" src={getAssetUrl('website/TravelHospitality.jpg')} alt="no data icon"/>
                   </Stack>
                 </Grid>

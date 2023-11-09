@@ -27,13 +27,13 @@ export const CustomerRelationship = () => {
                     <Stack sx={{alignItems:"flex-end", justifyContent:"flex-start"}}>    
                     {isMobile? 
                     <>
-                        <Box sx={{width:"360px", height:"300px", overflow:"hidden"}}>
-                          <img style={{width:"550px",height:"300px", objectFit:"cover", objectPosition:"-20% 50%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
+                        <Box sx={{width:"100%", height:"450px", overflow:"hidden"}}>
+                          <img style={{width:"120%",height:"450px", objectFit:"cover", objectPosition:"20% 70%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
                         </Box>
                     </> : 
                     <Stack sx={{alignItems:"flex-end"}}>
-                    <Box sx={{width:"90%", height:"auto", overflow:"hidden", justifyContent:"center"}}>
-                        <img style={{width:"100%",height:"650px", objectFit:"cover", objectPosition:"20% 50%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
+                    <Box sx={{width:"140%", height:"auto", overflow:"hidden", justifyContent:"center"}}>
+                        <img style={{width:"150%",height:"650px", objectFit:"cover", objectPosition:"70% 65%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
                     </Box>
                     </Stack>
                     }

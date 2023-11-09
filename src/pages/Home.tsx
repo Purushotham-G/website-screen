@@ -17,23 +17,24 @@ import { Header } from '../components/Home/Header';
 import { CustomerRelationship } from '../layouts/Home/CustomerRelationship';
 import { Footer } from '../components/Home/Footer';
 import { IndustryScreen } from '../layouts/Home/IndustryScreen';
+import { HeaderTitle } from '../components/Home/HeaderTitle';
 
 const Home = () => {
   return (
     
     <>
-       <Stack sx={{width:"100%"}}>
-           <Header />
-           <ManageBusiness />
-           <PersonalizedMessage />
-           <WhatsappFeature /> 
-           <IndustryScreen />
-           <MultiPlatForms />
-           <CustomerSlider />
-           <PricePlans />
-           <Sales />
-           <Footer />
-         </Stack>
+      <Stack sx={{width:"100%"}}>
+        <Header />
+        <ManageBusiness />
+        <PersonalizedMessage />
+        <WhatsappFeature /> 
+        <IndustryScreen />
+        <MultiPlatForms />
+        <CustomerSlider />
+        <PricePlans />
+        <Sales />
+        <Footer />
+      </Stack>
     </>
   )
 }
