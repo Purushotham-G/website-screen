@@ -32,8 +32,8 @@ export const CustomerRelationship = () => {
                         </Box>
                     </> : 
                     <Stack sx={{alignItems:"flex-end"}}>
-                    <Box sx={{width:"140%", height:"auto", overflow:"hidden", justifyContent:"center"}}>
-                        <img style={{width:"150%",height:"650px", objectFit:"cover", objectPosition:"70% 50%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
+                    <Box sx={{width:"130%", height:"auto", overflow:"hidden", justifyContent:"center"}}>
+                        <img style={{width:"150%",height:"650px", objectFit:"cover", objectPosition:"60% 60%"}} src={getAssetUrl('screenshots/chat.png')} alt="no data icon"/>
                     </Box>
                     </Stack>
                     }
