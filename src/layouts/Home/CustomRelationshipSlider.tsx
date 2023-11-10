@@ -12,6 +12,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from 'react';
 
+// styling
+import './Home.css';
+
 export const CustomRelationshipSlider = () => {;
     const isMobile = useMediaQuery({ maxWidth: 786 });
 
@@ -60,7 +63,7 @@ export const CustomRelationshipSlider = () => {;
     <>
         <Stack sx={{width:"100%"}}>
           
-        <Slider {...settings} >
+        <Slider {...settings} className='silder-dots' >
             <Stack>
                 <Stack sx={{gap:{md:2, xs:1}}}>
                     <Typography sx={{fontWeight:"600", fontSize:{xs:"32px", md:"48px", sm:"28px"}, px:{md:6, xs:2}, lineHeight:{md:"58px", xs:"40px", sm:"42px"}}}>Supercharge Your Conversations With <span style={{color:"#0085FF"}}> WhatsApp </span> </Typography>

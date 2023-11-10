@@ -1,0 +1,17 @@
+.slick-dots {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.slick-dots li button:before {
+  /* margin-top: 50px; */
+  font-size: 30px;
+  content: "ـــ";
+  color: rgba(0, 133, 255, 0.25);
+}
+
+.slick-dots li.slick-active button:before {
+  /* margin-top: 50px; */
+  color: rgba(0, 133, 255, 1) !important;
+}
