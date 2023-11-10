@@ -32,7 +32,7 @@ export const CustomerSlider = () => {
         };
 
   return (
-    <Box sx={{maxWidth:"1440px !important",backgroundColor:"#FAFAFA", py:{md:8, xs:2}, gap:{md:3, xs:2}}}>
+    <Stack sx={{width:"100%",backgroundColor:"#FAFAFA", py:{md:8, xs:2}, gap:{md:3, xs:2}}}>
         <Stack sx={{height:{md:"auto",xs:"auto"}, alignItems:"center", justifyContent:"center", px:{xs:6}}}>
             <Stack sx={{alignItems:"center", justifyContent:"center"}}>
                 <Stack sx={{alignItems:"center", justifyContent:"center", textAlign:"center"}}>
@@ -99,6 +99,6 @@ export const CustomerSlider = () => {
     
             </Slider>
         </Stack>    
-    </Box>
+    </Stack>
   )
 }
