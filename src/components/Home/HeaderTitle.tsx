@@ -57,6 +57,7 @@ export const HeaderTitle = () => {
                 color: 'black',
                 fontWeight:"600",
                 fontSize:"16px",
+                transition: 'color 0.1s ease-in-out',
                 '&:hover': {
                   textDecoration: 'underline',
                   color: 'blue', 

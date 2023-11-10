@@ -26,8 +26,6 @@ export const CustomRelationshipSlider = () => {;
     },
   });
 
-  
-
     const settings: any = {
         dots: true,
         infinite: true,
@@ -37,32 +35,11 @@ export const CustomRelationshipSlider = () => {;
         autoplay: true,
         speed: 3000,
         autoplaySpeed: 8000,
-        // appendDots: (dots: JSX.Element[]) => (
-        //   <div style={{ backgroundColor: '#e7e7e7', padding: '10px' }}>
-        //     <ul style={{ margin: '0px' }}> 
-        //       {dots.map((dot, index) => (
-        //         <li
-        //           key={index}
-        //           style={{
-        //             display: 'inline-block',
-        //             marginRight: '10px',
-        //             color: index === currentSlide ? '#0085FF' : '#808080', // Adjust the colors here
-        //           }}
-        //         >
-        //           <button style={{ border: 'none', backgroundColor: 'transparent', cursor: 'pointer' }} onClick={() => setCurrentSlide(index)}>
-        //             {index + 1}
-        //           </button>
-        //         </li>
-        //       ))}
-        //     </ul>
-        //   </div>
-        // ),
         };
 
   return (
     <>
-        <Stack sx={{width:"100%"}}>
-          
+        <Stack sx={{width:"100%"}}>    
         <Slider {...settings} className='silder-dots' >
             <Stack>
                 <Stack sx={{gap:{md:2, xs:1}}}>
