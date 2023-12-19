@@ -54,7 +54,8 @@ export const PricePlans = () => {
                           <Typography sx={{color:"#1A1A1A", fontSize:{xs:"16px"},fontWeight:"600", alignItems:"center", px:4, py:1}}>Plus</Typography>
                           <Stack sx={{position:"absolute", top:"-20px", left:"15px"}}>
                             <Button variant='contained' disableElevation sx={{ fontWeight: 'bold', borderRadius: "5px", backgroundColor:"#0085FF", fontSize:{md:"14px", xs:"10px"}, textTransform:"none" }}>Popular</Button>
-                          </Stack>    
+                          </Stack> 
+                             
                       </Stack> : 
                       <Stack sx={{flexDirection:"row",alignItems:"center",px:{md:1}, py:{md:1}, borderRadius:"8px", border:"1px solid #0085FF1A",gap:{md:1, xs:1}, justifyContent:"center"}}>
                           <Typography sx={{color:"#1A1A1A", fontSize:{md:"20px", sm:"18px"},fontWeight:"600"}}>Plus</Typography>
