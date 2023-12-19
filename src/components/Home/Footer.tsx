@@ -35,12 +35,12 @@ export const Footer = () => {
         <Container sx={{maxWidth:"1200px !important", alignItems:"center", justifyContent:"center", mt:2, py:3}}>
             <Grid container spacing={{md:5, xs:1}}>
                 <Grid item xs={12} md={3.6}>
-                    <Stack sx={{py:{md:3, xs:2}, gap:{md:3, xs:1}}}>
+                    <Stack sx={{py:{md:3, xs:2}, gap:{md:3, xs:1}, px:{md:0, xs:3}}}>
                     <Stack sx={{flexDirection:"row", alignItems:"center"}}>
                     <img width="43px" height="30px" alt='avocado icon' src={getAssetUrl('avocado.svg')} />
                     <Typography sx={{fontSize:{md:"32px",}, fontWeight:"700", color:"#1A1A1A"}}>Avocado</Typography>
                     </Stack>
-                        <Stack>
+                        <Stack sx={{pr:{md:0, xs:2}}}>
                             <Typography>Explore the business possibilities of WhatsApp with Avocado</Typography>
                         </Stack>
                         <Stack>
@@ -54,7 +54,7 @@ export const Footer = () => {
                     </Stack>
                 </Grid>
                 <Grid item xs={12} md={2.8}>
-                    <Stack sx={{py:{md:3, xs:2}, gap:{md:2, xs:1}}}>
+                    <Stack sx={{py:{md:3, xs:2}, gap:{md:2, xs:1}, px:{md:0, xs:3}}}>
                         <Typography sx={{fontWeight:"600", fontSize:{md:"16px", xs:""}, color:"#1A1A1A"}}>Services</Typography>
                           {services?.map((item)=>
                           <Typography>{item.name}</Typography>
@@ -62,7 +62,7 @@ export const Footer = () => {
                     </Stack>
                 </Grid>
                 <Grid item xs={12} md={2.8}>
-                    <Stack sx={{py:{md:3,xs:2}, gap:{md:2, xs:1}}}>
+                    <Stack sx={{py:{md:3,xs:2}, gap:{md:2, xs:1}, px:{md:0, xs:3}}}>
                         <Typography sx={{fontWeight:"600", fontSize:{md:"16px", xs:""}, color:"#1A1A1A"}}>Product Feature</Typography>
                         {product?.map((item)=>
                         <Typography>{item.name}</Typography>
@@ -70,7 +70,7 @@ export const Footer = () => {
                     </Stack>
                 </Grid>
                 <Grid item xs={12} md={2.8}>
-                    <Stack sx={{py:{md:3, xs:2}, gap:{md:2, xs:1}}}>
+                    <Stack sx={{py:{md:3, xs:2}, gap:{md:2, xs:1}, px:{md:0, xs:3}}}>
                         <Typography sx={{fontWeight:"600", fontSize:{md:"16px", xs:""}, color:"#1A1A1A"}}>Company</Typography>
                         {company?.map((item)=>
                         <Typography>{item.name}</Typography>

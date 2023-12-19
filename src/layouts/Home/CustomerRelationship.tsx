@@ -23,7 +23,7 @@ export const CustomerRelationship = () => {
                           <CustomRelationshipSlider />
                         </Stack>  
                     </Grid>
-                    <Grid item md={6} xs={12} sx={{}}>
+                    <Grid item md={6} xs={12}>
                     <Stack sx={{alignItems:"flex-end", justifyContent:"flex-start"}}>    
                     {isMobile? 
                     <>

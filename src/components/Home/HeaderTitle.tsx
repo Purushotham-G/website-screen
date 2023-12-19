@@ -48,8 +48,7 @@ export const HeaderTitle = () => {
                 // transition: 'color 0.1s ease-in-out',
                 '&:hover': {
                   textDecoration: 'underline',
-                  color: '#0085FF', 
-                  
+                  color: '#0085FF',   
                 },
               }}
             >

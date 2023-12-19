@@ -24,16 +24,16 @@ const Home = () => {
     
     <>
       <Stack sx={{width:"100%"}}>
-        <Header />
+        {/* <Header />
         <ManageBusiness />
         <PersonalizedMessage />
-        <WhatsappFeature /> 
-        <IndustryScreen />
-        <MultiPlatForms />
-        <CustomerSlider />
+        <WhatsappFeature />  */}
+        {/* <IndustryScreen /> */}
+        {/* <MultiPlatForms /> */}
+        {/* <CustomerSlider /> */}
         <PricePlans />
-        <Sales />
-        <Footer />
+        {/* <Sales />
+        <Footer /> */}
       </Stack>
     </>
   )

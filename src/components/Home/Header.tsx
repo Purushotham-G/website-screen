@@ -16,10 +16,10 @@ export const Header = () => {
       <Stack sx={{position:"relative", px:{md:10}, top:{md:"-800px", xs:"-800px"}}}>
         <HeaderTitle />
       </Stack>
-      <Stack sx={{position:"relative", top:{md:"-750px", xs:"-800px"}}}>
+      <Stack sx={{position:"relative", top:{md:"-750px", xs:"-750px"}}}>
         <CustomerRelationship />
       </Stack>
-      <Stack sx={{position:"relative", bottom:{md:"800px", xs:"800px"}}}>
+      <Stack sx={{position:"relative", bottom:{md:"800px", xs:"800px"}, px:{md:10, xs:2, sm:5}}}>
         <SocialMedia />
       </Stack>
     </Stack>

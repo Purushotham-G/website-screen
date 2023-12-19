@@ -26,7 +26,7 @@ export const PersonalizedMessage = () => {
               </Stack>           
               </Grid>
               <Grid item md={6} xs={12}>
-                <Stack sx={{alignItems:"center", px:{md:2, xs:5}}}>
+                <Stack sx={{alignItems:"center"}}>
                   <PersionalizedApps />
                 </Stack>
                   

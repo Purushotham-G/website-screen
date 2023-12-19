@@ -9,7 +9,7 @@ export const ManageBusiness = () => {
 
   return (
     <Stack sx={{width:"100%"}}>
-        <Stack sx={{mt:4, py:{md:6, xs:3}, alignItems:"center", justifyContent:"center", gap:4}}>
+        <Stack sx={{mt:4, py:{md:6, xs:4}, alignItems:"center", justifyContent:"center", gap:4, px:{md:6, xs:2}}}>
             <Stack id="services" sx={{alignItems:"center", justifyContent:"center", px:{md:1, xs:2}}}>
                 <Typography sx={{fontSize:{md:"32px", xs:"24px"}, fontWeight:"600", textAlign:"center"}}>Better tools to <span style={{ color: "#0085FF" }}> manage </span> your business</Typography>
                 <Typography sx={{fontSize:{md:"18px",xs:"16px"}, fontWeight:"400", textAlign:"center"}}>Millions of companies of all sizes—from startups to Fortune 500s—use Avocado’s SDK</Typography>
@@ -17,7 +17,7 @@ export const ManageBusiness = () => {
             <Stack sx={{maxWidth:"1200px !important"}}>
             <Grid container spacing={3}>
                 <Grid item md={4} xs={12}>
-                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"280px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
+                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"260px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
                         <Stack sx={{width:"48px", height:"48px", backgroundColor:"#0085FF14", borderRadius:"50%", alignItems:"center", justifyContent:"center"}}>
                             <Typography sx={{color:"#0085FF", fontSize:{md:"24px", xs:"20px", sm:"22px"}}}>1</Typography>
                         </Stack>
@@ -26,7 +26,7 @@ export const ManageBusiness = () => {
                     </Stack>
                 </Grid>
                 <Grid item md={4} xs={12}>
-                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:4}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"280px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
+                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:4}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"260px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
                         <Stack sx={{width:"48px", height:"48px", backgroundColor:"#0085FF14", borderRadius:"50%", alignItems:"center", justifyContent:"center"}}>
                             <Typography sx={{color:"#0085FF", fontSize:{md:"24px", xs:"20px", sm:"22px"}}}>2</Typography>
                         </Stack>
@@ -35,7 +35,7 @@ export const ManageBusiness = () => {
                     </Stack>
                 </Grid>
                 <Grid item md={4} xs={12}>
-                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"280px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
+                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"260px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
                         <Stack sx={{width:"48px", height:"48px", backgroundColor:"#0085FF14", borderRadius:"50%", alignItems:"center", justifyContent:"center"}}>
                             <Typography sx={{color:"#0085FF", fontSize:{md:"24px", xs:"20px", sm:"22px"}}}>3</Typography>
                         </Stack>
@@ -44,7 +44,7 @@ export const ManageBusiness = () => {
                     </Stack>
                 </Grid>
                 <Grid item md={4} xs={12}>
-                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"280px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
+                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"260px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
                         <Stack sx={{width:"48px", height:"48px", backgroundColor:"#0085FF14", borderRadius:"50%", alignItems:"center", justifyContent:"center"}}>
                             <Typography sx={{color:"#0085FF", fontSize:{md:"24px", xs:"20px", sm:"22px"}}}>4</Typography>
                         </Stack>
@@ -53,7 +53,7 @@ export const ManageBusiness = () => {
                     </Stack>
                 </Grid>
                 <Grid item md={4} xs={12}>
-                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"280px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
+                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"260px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
                         <Stack sx={{width:"48px", height:"48px", backgroundColor:"#0085FF14", borderRadius:"50%", alignItems:"center", justifyContent:"center"}}>
                             <Typography sx={{color:"#0085FF", fontSize:{md:"24px", xs:"20px", sm:"22px"}}}>5</Typography>
                         </Stack>
@@ -62,7 +62,7 @@ export const ManageBusiness = () => {
                     </Stack>
                 </Grid>
                 <Grid item md={4} xs={12}>
-                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"280px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
+                    <Stack sx={{border:"1px solid #E1E1E1", borderRadius:"8px", p:{md:6, xs:3}, gap:{md:2, xs:1}, minHeight:{md:"300px", xs:"260px"}, maxHeight:"390px", '&:hover': { boxShadow:"0px 0px 25px rgba(0, 133, 255, 0.08)", cursor: 'pointer'},}}>
                         <Stack sx={{width:"48px", height:"48px", backgroundColor:"#0085FF14", borderRadius:"50%", alignItems:"center", justifyContent:"center"}}>
                             <Typography sx={{color:"#0085FF", fontSize:{md:"24px", xs:"20px", sm:"22px"}}}>6</Typography>
                         </Stack>
